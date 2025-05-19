@@ -1,0 +1,151 @@
+body {
+	background-color: #d4fcd4;
+
+}
+
+.estilomenu {
+	display: flex;
+	align-items: center;
+	background-color:#667C55;
+	padding: 10px;
+
+}
+
+.logo{
+	height: 120px;
+	margin-left: 23px;
+	margin-right: 23px;
+
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 55px;
+}
+
+.menu li a:hover{
+	background-color: #555;
+	color: white;
+}
+
+
+.bloco {
+	display: grid;
+	justify-content: center
+}
+
+.cartao {
+	background-color: #A5B67C;
+	border-radius: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+	max-width: 400px
+}
+
+.cartao p {
+	margin:5px 0;
+	text-align: center;
+}
+
+.cartao h2{
+	color: #800000;
+	margin-top: 0;
+	text-align: center;
+}
+
+.valor {
+	font-size: 0.3cm;
+	color: #722F37;
+	margin-top: 5px;
+}
+
+.botao {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 115px;
+	padding: 10px 15px;
+	background-color: #25d366;
+	color: #000;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.quizlinha {
+	display: block;
+	width: fit-content;
+	text-align: center;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color:#333;
+}
+
+.quizlinha::before {
+	content:'';
+	display: block;
+	width: 250px;
+	height: 250px;
+	background-image: url(linhas.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.quizbanho {
+	display: block;
+	width: fit-content;
+	text-align: center;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color:#333;
+}
+
+.quizbanho::before {
+	content:'';
+	display: block;
+	width: 250px;
+	height: 250px;
+	background-image: url(banho.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button.carta img {
+	width: 120px;
+	border-radius: 8px;
+	margin: 2px;
+}
+
+.alternativa {
+	background-color: #F0F8F7;
+	border-radius: 12px;
+	padding: 10px 16px;
+	border: 1px solid black;
+	margin: 15px;
+	width: 300px;
+
+}
+
+.alternativa:hover {
+	background-color: #77dd77;
+}
+
+.mensagem {
+	text-align: center;
