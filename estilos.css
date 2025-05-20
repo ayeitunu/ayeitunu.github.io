@@ -1,146 +1,125 @@
 body {
 	background-color: #d4fcd4;
-
 }
 
 .estilomenu {
 	display: flex;
-	align-items: center;
+ 	align-items: center;
 	background-color:#667C55;
-	padding: 10px;
-
+	padding: 0.625rem;
 }
 
-.logo{
-	height: 120px;
-	margin-left: 23px;
-	margin-right: 23px;
-
+.logo {
+	height: 7.5rem;
+ 	margin-left: 1.4375rem;
+ 	margin-right: 1.4375rem;
 }
 
 .menu {
 	list-style: none;
-	display: flex;
-	margin: 0;
-	padding: 0;
+ 	display: flex;
+ 	margin: 0;
+	 padding: 0;
 }
 
 .menu li a {
 	color: white;
-	text-decoration: none;
-	padding: 15px 55px;
+ 	text-decoration: none;
+ 	padding: 0.9375rem 3.4375rem;
 }
 
-.menu li a:hover{
+.menu li a:hover {
 	background-color: #555;
-	color: white;
+ 	color: white;
 }
-
 
 .bloco {
 	display: grid;
-	justify-content: center
+ 	justify-content: center;
 }
 
 .cartao {
 	background-color: #A5B67C;
-	border-radius: 12px;
-	padding: 20px;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-	max-width: 400px
+ 	border-radius: 0.75rem;
+ 	padding: 1.25rem;
+ 	margin-bottom: 1.25rem;
+ 	box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.05);
+ 	max-width: 25rem;
 }
 
 .cartao p {
-	margin:5px 0;
-	text-align: center;
+	margin: 0.3125rem 0;
+ 	text-align: center;
 }
 
-.cartao h2{
+.cartao h2 {
 	color: #800000;
 	margin-top: 0;
 	text-align: center;
 }
 
 .valor {
-	font-size: 0.3cm;
-	color: #722F37;
-	margin-top: 5px;
+	font-size: 0.9375rem;
+ 	color: #722F37;
+	margin-top: 0.3125rem;
 }
 
 .botao {
 	display: inline-block;
-	margin-top: 10px;
-	margin-left: 115px;
-	padding: 10px 15px;
-	background-color: #25d366;
-	color: #000;
-	text-decoration: none;
-	border-radius: 8px;
-	font-weight: bold;
+ 	margin-top: 0.625rem;
+ 	margin-left: 7.1875rem;
+ 	padding: 0.625rem 0.9375rem;
+ 	background-color: #25d366;
+ 	color: #000;
+ 	text-decoration: none;
+ 	border-radius: 0.5rem;
+ 	font-weight: bold;
 }
 
-.quizlinha {
+.quizlinha,
+.quizbanho {
 	display: block;
-	width: fit-content;
-	text-align: center;
-	margin: 0 auto;
-	text-align: center;
-	text-decoration: none;
-	color:#333;
+ 	width: fit-content;
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	text-decoration: none;
+	color: #333;
+}
+
+.quizlinha::before,
+.quizbanho::before {
+	content: '';
+ 	display: block;
+ 	width: 15.625rem;
+ 	height: 15.625rem;
+ 	background-size: contain;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
 }
 
 .quizlinha::before {
-	content:'';
-	display: block;
-	width: 250px;
-	height: 250px;
 	background-image: url(linhas.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.quizbanho {
-	display: block;
-	width: fit-content;
-	text-align: center;
-	margin: 0 auto;
-	text-align: center;
-	text-decoration: none;
-	color:#333;
 }
 
 .quizbanho::before {
-	content:'';
-	display: block;
-	width: 250px;
-	height: 250px;
 	background-image: url(banho.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 button.carta img {
-	width: 120px;
-	border-radius: 8px;
-	margin: 2px;
+	width: 7.5rem;
+	border-radius: 0.5rem;
+	margin: 0.125rem;
 }
 
 .alternativa {
 	background-color: #F0F8F7;
-	border-radius: 12px;
-	padding: 10px 16px;
-	border: 1px solid black;
-	margin: 15px;
-	width: 300px;
-
+	border-radius: 0.75rem;
+	padding: 0.625rem 1rem;
+	border: 0.0625rem solid black;
+	margin: 0.9375rem;
+	width: 18.75rem;
 }
 
 .alternativa:hover {
@@ -149,3 +128,4 @@ button.carta img {
 
 .mensagem {
 	text-align: center;
+}
