@@ -5,27 +5,30 @@ body {
 .estilomenu {
 	display: flex;
  	align-items: center;
+	flex-wrap: wrap;
 	background-color:#667C55;
-	padding: 0.625rem;
+	padding: 0 1rem;
 }
 
 .logo {
-	height: 7.5rem;
- 	margin-left: 1.4375rem;
- 	margin-right: 1.4375rem;
+	height: 6rem;
+ 	margin: 0 1rem;
 }
 
 .menu {
 	list-style: none;
  	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
  	margin: 0;
-	 padding: 0;
+	padding: 0;
+	gap: 1rem;
 }
 
 .menu li a {
 	color: white;
  	text-decoration: none;
- 	padding: 0.9375rem 3.4375rem;
+ 	padding: 1rem 2rem;
 }
 
 .menu li a:hover {
