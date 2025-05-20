@@ -6,6 +6,10 @@ body {
 	margin-top: 2rem;
 }
 
+h2 {
+	text-align: center
+}
+
 .estilomenu {
 	display: flex;
  	align-items: center;
