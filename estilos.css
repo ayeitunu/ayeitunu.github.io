@@ -121,6 +121,25 @@ body {
 	background-image: url(banho.jpg);
 }
 
+#jogo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 2rem;
+}
+
+.carta img {
+	max-width: 6.25rem;
+	height: auto;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.carta img:hover {
+	transform: scale(1.05);
+}
+
 button.carta img {
 	display: block;
 	max-width: 50%;
