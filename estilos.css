@@ -116,7 +116,7 @@ body {
 
 button.carta img {
 	display: block;
-	max-width: 100%;
+	max-width: 50%;
 	height: auto;
 	border-radius: 0.5rem;
 	margin: 0.125rem;
