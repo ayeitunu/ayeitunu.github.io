@@ -9,10 +9,10 @@ body {
 .estilomenu {
 	display: flex;
  	align-items: center;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	background-color:#667C55;
 	padding: 0 1rem;
+	gap: 2rem
 }
 
 .logo {
@@ -21,13 +21,19 @@ body {
 }
 
 .menu {
+	display: flex;
+	justify-content: center;
 	list-style: none;
  	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	flex: 1;
  	margin: 0;
 	padding: 0;
 	gap: 1rem;
+}
+
+.menu li {
+	flex: 0 1 auto;
 }
 
 .menu li a {
