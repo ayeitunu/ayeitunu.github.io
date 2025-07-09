@@ -22,27 +22,25 @@
 					</ul>
 				</nav>
 				
-		<h1><center>O que é</center></h1>
-
-			</header>
-				
+		<div class="espacamento">
+			<h1><center>O que é</center></h1>
 		
 		<div style="max-width: 600px; margin: 40px auto; text-align: center;">
-		<p>A numerologia é uma prática esotérica que interpreta a simbologia dos números e sua relação com a vida humana, personalidade e destino. Acredita-se que cada número possui uma vibração e significado únicos, que podem oferecer insights sobre características pessoais, talentos, desafios e caminhos de vida.</p></div>
+			<p>A numerologia é uma prática esotérica que interpreta a simbologia dos números e sua relação com a vida humana, personalidade e destino. Acredita-se que cada número possui uma vibração e significado únicos, que podem oferecer insights sobre características pessoais, talentos, desafios e caminhos de vida.</p></div>
 
 
 		<p><h1><center>O significado dos números</center></h1></p>
 
 		<div style="max-width: 600px; margin: 40px auto; text-align: center;">
-		<p><center><strong>1:</strong> Liderança e individualidade.</center></p>
-		<p><center><strong>2:</strong> Cooperação e harmonia.</center></p>
-		<p><center><strong>3:</strong> Criatividade e expressão.</center></p>
-		<p><center><strong>4:</strong> estabilidade e estrutura.</center></p>
-		<p><center><strong>5:</strong> Liberdade e adaptação.</center></p>
-		<p><center><strong>6:</strong> Amor e responsabilidade.</center></p>
-		<p><center><strong>7:</strong> Espiritualidade e intuição.</center></p>
-		<p><center><strong>8:</strong> Cooperação e harmonia.</center></p>
-		<p><center><strong>9:</strong> Coopaixão e conclusão.</center></p></div>
+			<p><center><strong>1:</strong> Liderança e individualidade.</center></p>
+			<p><center><strong>2:</strong> Cooperação e harmonia.</center></p>
+			<p><center><strong>3:</strong> Criatividade e expressão.</center></p>
+			<p><center><strong>4:</strong> estabilidade e estrutura.</center></p>
+			<p><center><strong>5:</strong> Liberdade e adaptação.</center></p>
+			<p><center><strong>6:</strong> Amor e responsabilidade.</center></p>
+			<p><center><strong>7:</strong> Espiritualidade e intuição.</center></p>
+			<p><center><strong>8:</strong> Cooperação e harmonia.</center></p>
+			<p><center><strong>9:</strong> Coopaixão e conclusão.</center></p></div>
 
 
 		<br><br>
@@ -50,7 +48,7 @@
 		<h1><center>Número da Alma</center></h1>
 
 		<div style="max-width: 600px; margin: 40px auto; text-align: center;">
-		<p>Na numerologia, o "número da alma" (também conhecido como "número da essência" ou "número pessoal") é um número que revela a natureza vibracional e as características da sua alma, ou seja, sua personalidade, traços e tendências.</p></div>
+			<p>Na numerologia, o "número da alma" (também conhecido como "número da essência" ou "número pessoal") é um número que revela a natureza vibracional e as características da sua alma, ou seja, sua personalidade, traços e tendências.</p></div>
 
 
 		<br><br>
@@ -59,7 +57,7 @@
 
 
 		<div style="max-width: 600px; margin: 40px auto; text-align: center;">
-		<p>Na numerologia, o "número do destino" (também conhecido como número pessoal ou número do caminho de vida) é calculado a partir da data de nascimento e revela o propósito de vida e o caminho a seguir. É um número que, segundo a numerologia, reflete a missão e as oportunidades que a pessoa deve abraçar para alcançar o sucesso e a felicidade.</p></div>
+			<p>Na numerologia, o "número do destino" (também conhecido como número pessoal ou número do caminho de vida) é calculado a partir da data de nascimento e revela o propósito de vida e o caminho a seguir. É um número que, segundo a numerologia, reflete a missão e as oportunidades que a pessoa deve abraçar para alcançar o sucesso e a felicidade.</p></div>
 
 
 		<br><br>
@@ -76,11 +74,27 @@
 
 		<br><br>
 
-		<form method="post" action="#">
-		<center>Nome:<input type="text"name="nome" placeholder="Digite seu nome"><br>
-		Nascimento:<input type="date"name="nascimento" required></form></center><br>
-		<center><button type="submit">Ver meus números</button></center>
+		<div class="container">
+			<form id="formulario">
+   		 		<center>
+     					 <label for="nome">Nome:</label>
+     						 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><br><br>
+      
+     					 <label for="nascimento">Nascimento:</label>
+    						  <input type="date" name="nascimento" id="nascimento" required><br><br>
+      
+     					 <button type="submit">Ver meus números</button>
+  				  </center>
+  			</form>
+		</div>
 
+ 				 <center>
+   					 <h2 id="resultado"></h2>
+  				</center>
+		</div>
+
+  <script src="numerologia.js"></script>
+				
 	</body>
 			
 </html>
