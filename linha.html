@@ -9,79 +9,120 @@
 		<body>
 
 			<header>
-					<nav class="estilomenu">
-						<a href= "index.html" class="linklog">
-							<img src="logo.png" alt="logo" class="logo"></a>
-						<ul class="menu">
-						<li><a href="index.html">Pagina inicial</a></li>
-						<li><a href="consultas.html">Consultas</a></li>
-						<li><a href="numerologia.html">Numerologia</a></li>
-						<li><a href="taro.html">Tarô</a></li>
-						<li><a href="quizzes.html">Quizzes</a></li>
-						<li><a href="sobrenos.html">Sobre nós</a></li>
-						</ul>
-						</nav>
+
+				<nav class="estilomenu">
+  					<a href="index.html" class="linklog"><img src="logo.png" alt="logo" class="logo"></a>
+  					<ul class="menu">
+    					<li><a href="index.html">Página inicial</a></li>
+    					<li><a href="consultas.html">Consultas</a></li>
+    					<li><a href="numerologia.html">Numerologia</a></li>
+    					<li><a href="taro.html">Tarô</a></li>
+    					<li><a href="quizzes.html">Quizzes</a></li>
+    					<li><a href="sobrenos.html">Sobre nós</a></li>
+  					</ul>
+				</nav>
 
 			</header>
-			
-		<div class="bloco">
-			<form method="post" action="#">
-				<div class="pergunta">
-				<p><h3>1. Como você costuma lidar com os desafios da vida?</h3></p></div>
-				<div class="alternativa">
-				<input type="radio" name="desafios" value="a"> a) Enfrento com coragem e energia<br></div>
-				<div class="alternativa">
-				<input type="radio" name="desafios" value="b"> b) Reflito e busco sabedoria com paciência<br></div>
-				<div class="alternativa">
-				<input type="radio" name="desafios" value="c"> c) Sigo com fé na natureza e nos meus instintos<br></div>
-				<div class="alternativa">
-				<input type="radio" name="desafios" value="d"> d) Tento manter leveza e alegria, mesmo nas dificuldes</div>
+
+			<div class="espacamento">
+<h4><em>Sabe aqueles dias em que nada flui? Ou quando se sente pesado e desprotegido?</em></h4>
+<h4>As preocupações do dia a dia, o estresse e até mesmo as interações com outras pessoas podem desiquilibrar nossa energia.</h4>
+<h4><strong>Descubra com este quiz rapido qual o tipo de banho espiritual ideal para reequilibrar a sua energia e prosperar!</strong></h4>
+</div>
+
+<div class="espacamento">
+<div class="cartao">
+<div class="pergunta">
+     <h3>1. Como você reage diante os desafios da vida?</h3>
+      <div class="opcao" data-group="desafios" data-value="a">a) Com coragem  energia</div>
+      <div class="opcao" data-group="desafios" data-value="b">b) Com reflexão e paciencia</div>
+      <div class="opcao" data-group="desafios" data-value="c">c) Com fé na natureza e nos meus intintos</div>
+      <div class="opcao" data-group="desafios" data-value="d">d) Mantendo a leveza e alegria</div>
+</div>
+
+<br>
+
+<div class="pergunta">
+     <h3>2. Qual dessas palavras mais te descreve?</h3>
+      <div class="opcao" data-group="palavra" data-value="a">a) Justiça</div>
+      <div class="opcao" data-group="palavra" data-value="b">b) Experiência</div>
+      <div class="opcao" data-group="palavra" data-value="c">c) Coragem</div>
+      <div class="opcao" data-group="palavra" data-value="d">d) Doçura</div>
+</div>
+
+<br>
+
+<div class="pergunta">
+     <h3>3. Qual desses ambientes te traz mais paz?</h3>
+      <div class="opcao" data-group="ambiente" data-value="a">a) Ruas e estradas</div>
+      <div class="opcao" data-group="ambiente" data-value="b">b) Uma varanda com café e silêncio</div>
+      <div class="opcao" data-group="ambiente" data-value="c">c) Florestas e cachoeiras</div>
+      <div class="opcao" data-group="ambiente" data-value="d">d) Parques e praças</div>
+</div>
+
+<br>
+
+<div class="pergunta">
+     <h3>4. Como você gosta de ajudar as pessoas?</h3>
+      <div class="opcao" data-group="ajudar" data-value="a">a) Mostrando a verdade e provocando reflexões</div>
+      <div class="opcao" data-group="ajudar" data-value="b">b) Aconselhando com calma e paciência</div>
+      <div class="opcao" data-group="ajudar" data-value="c">c) Motivando e protegendo</div>
+      <div class="opcao" data-group="ajudar" data-value="d">d) Levando alegria</div>
+</div>
+
+<br>
+
+<div id="modalResultado" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar">&times;</span>
+    <p id="textoResultado"></p>
+  </div>
+</div>
+
+<button class="botao-resultado" id="verResultado">Ver Resultado</button>
+
+</div>
+</div>
+
+<style>
 
 
-			<form method="post" action="#">
-				<div class="pergunta">
-				<p><h3>2. Qual dessas palavras mais te representa?</h3></p></div>
-				<div class="alternativa">
-				<input type="radio" name="palavra" value="a"> a) Justiça<br></div>
-				<div class="alternativa">
-				<input type="radio" name="palavra" value="b"> b) Experiência<br></div>
-				<div class="alternativa">
-				<input type="radio" name="palavra" value="c"> c) Coragem<br></div>
-				<div class="alternativa">
-				<input type="radio" name="palavra" value="d"> d) Doçura</div>
+.perguntas {
+  margin-bottom: 30px;
+}
+
+.perguntas h3 {
+  margin-bottom: 15px;
+  color: #c2b280;
+  font-size: 18px;
+}
+
+.opcao {
+  background-color: #4f6f52;
+  color: #c2b280;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.opcao:hover {
+  background-color: #183400;
+}
+
+.opcao.selecionada {
+  background-color: #394f3a;
+  border-color: #c2b280;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+</style>
 
 
-			<form method="post" action="#">
-				<div class="pergunta">
-				<p><h3>3. Qual ambiente te traz mais paz?</h3></p></div>
-				<div class="alternativa">
-				<input type="radio" name="ambiente" value="a"> a) Encruzilhadas, trilhas, movimento<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ambiente" value="b"> b) Uma varanda com café e silêncio<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ambiente" value="c"> c) A floresta, cachoeira e animais<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ambiente" value="d"> d) Um jardim colorido</div>
-
-
-			<form method="post" action="#">
-				<div class="pergunta">
-				<p><h3>4. Como você costuma ajudar outras pessoas?</h3></p></div>
-				<div class="alternativa">
-				<input type="radio" name="ajudar" value="a"> a) Mostrando verdades e provocando reflexões<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ajudar" value="b"> b) Aconselhando com calma e paciência<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ajudar" value="c"> c) Motivando e protegendo com firmeza<br></div>
-				<div class="alternativa">
-				<input type="radio" name="ajudar" value="d"> d) Levando alegria</div>
-
-
-			<form method="post" action="#">
-				<div class="bloco"> <button type="submit">Ver resultado</button></div></form>
-
-
-			<!--a)exu, b)pretos-velhos, c)caboclos, d)crianças-->
+ <script src="linha.js"></script>
 
 	</body>
 				
