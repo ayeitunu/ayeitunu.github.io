@@ -100,7 +100,7 @@ function significadoPersonalidade(numero) {
     11: "Você é vista como alguém inspiradora, sensível e com presença magnética. Atrai atenção pelo olhar profundo e espiritual.",
     22: "Sua imagem é de alguém forte e com grande capacidade de realização. Passa força interior e autoridade com sabedoria."
   };
-  return significados[numero] || "Número da personalidade desconhecido.";
+  return significados[numero];
 }
 
 
