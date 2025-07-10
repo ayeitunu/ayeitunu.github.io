@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   cartas.forEach((carta) => {
     carta.addEventListener("click", function () {
-
-      
       if (document.querySelector(".carta-conteudo.virada")) return;
 
       this.classList.add("virada");
@@ -24,21 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const nome = this.dataset.nome;
       const significado = obterSignificado(nome);
 
-     
       document.getElementById("resultado").innerHTML = `
-        <br><br><center><p><h2>${nome}</h2></p></center>
+        <br><br><center><h2>${nome}</h2></center>
         <p>${significado}</p>
       `;
 
-      
       document.getElementById("resultado").scrollIntoView({ behavior: "smooth" });
-
-      
       document.getElementById("outraCarta").style.display = "inline-block";
     });
   });
 
-  
   function obterSignificado(nome) {
     const significados = {
       "O Louco": "Dê o primeiro passo...",
@@ -61,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "O Julgamento": "Não fuja de suas verdades..."
     };
 
+    return significados[nome] || "Carta desconhecida.";
+  }
+
   document.getElementById("outraCarta").addEventListener("click", () => {
     document.querySelectorAll(".carta-conteudo").forEach(carta => {
       carta.classList.remove("virada");
@@ -69,8 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("outraCarta").style.display = "none";
-    
+
     embaralharCartas();
   });
 });
-
